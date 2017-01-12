@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sup_geo_browser</title>
+    <link rel="stylesheet" href="_css/_css.css">
+    <link rel="stylesheet" href="_css/bootstrap.css">
+
+</head>
+<body>
+<div class="text-center">
+    <div id="map" style="width:100%; height: 300px;"></div>
+
+    <form id="mapForm" class="form-inline">
+        <div class="form-group">
+            <input type="text" class="form-control" id="form" placeholder="Gdzie jesteś?">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Pokaż trasę</button>
+
+        <button id="findPosition" class="btn btn-info hidden" title="Wykryj moją lokalizację">
+                <span class="glyphicon glyphicon-screenshot"></span>
+        </button>
+    </form>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCario7GZRtrGeyxikSzVh3uP7KAJnvLDE&callback=initMap"></script>
+    <script type="text/javascript"></script>
+<script src="_js/scripts.js"></script>
+</body>
+</html>
